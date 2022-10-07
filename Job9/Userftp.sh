@@ -18,6 +18,9 @@ echo "Nom: $col_nom"
 echo "Mdp: $col_mdp"
 echo "Rôle: $col_role"
 echo ""
-done < Shell_Userlist.csv
+adduser $col_prenom
+
+
+done < <(tail -n +2 Shell_Userlist.csv)
 
 
